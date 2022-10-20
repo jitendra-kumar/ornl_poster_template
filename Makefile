@@ -1,9 +1,8 @@
-.PHONY: main clean FORCE
+SOURCE=poster
 
-main: poster.pdf
+all: 
+	pdflatex $(SOURCE)
+	pdflatex $(SOURCE)
 
-poster.pdf: FORCE
-	latexmk -pdflatex='lualatex -interaction nonstopmode' -pdf poster.tex
-
-clean:
-	latexmk -pdf -C
+clean::
+	rm -f $(SOURCE).aux $(SOURCE).nav $(SOURCE).snm $(SOURCE).toc $(SOURCE).blg $(SOURCE).out $(SOURCE).log $(SOURCE).bbl $(SOURCE).spl $(SOURCE).dvi $(SOURCE).pdf

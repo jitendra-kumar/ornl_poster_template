@@ -1,5 +1,5 @@
-% Gemini theme
-% https://github.com/anishathalye/gemini
+% Gemini theme based ORNL poster template
+% https://github.com/jitendra-kumar/ornl_poster_template
 
 \documentclass[final]{beamer}
 
@@ -11,7 +11,7 @@
 \usepackage{lmodern}
 \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
-\usecolortheme{gemini}
+\usecolortheme{ornl}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
@@ -36,20 +36,20 @@
 % Title
 % ====================
 
-\title{Some fancy title: followed by some more text}
+\title{\Huge Some fancy title: followed by some more text}
 
-\author{Alyssa P. Hacker \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+\author{\Large Author 1 \inst{1} \and Author 2 \inst{2} \and Author 3 \inst{2}}
 
-\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+\institute[shortinst]{\Large \inst{1} Some Institute \samelineand \inst{2} Another Institute}
 
 % ====================
 % Footer (optional)
 % ====================
 
-\footercontent{
+\footercontent{\Large
   \href{https://www.example.com}{https://www.example.com} \hfill
-  ABC Conference 2025, New York --- XYZ-1234 \hfill
-  \href{mailto:alyssa.p.hacker@example.com}{alyssa.p.hacker@example.com}}
+  Conference name and location \hfill
+  \href{mailto:email@example.com}{email@example.com}}
 % (can be left out to remove footer)
 
 % ====================
@@ -57,8 +57,8 @@
 % ====================
 
 % use this to include logos on the left and/or right side of the header:
-% \logoright{\includegraphics[height=7cm]{logo1.pdf}}
-% \logoleft{\includegraphics[height=7cm]{logo2.pdf}}
+ \logoright{\includegraphics[height=5cm]{logos/DOE_Logo_White.png}}
+ \logoleft{\includegraphics[height=6cm]{logos/ORNL_Stacked_white.png}\hspace{2cm}}
 
 % ====================
 % Body
